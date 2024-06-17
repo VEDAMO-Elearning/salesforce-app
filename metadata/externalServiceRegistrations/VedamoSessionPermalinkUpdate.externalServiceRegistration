@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>VedamoSessionPermalinkUpdate</label>
+    <namedCredentialReference>Vedamo</namedCredentialReference>
+    <operations>
+        <active>true</active>
+        <name>post</name>
+    </operations>
+    <registrationProviderType>Custom</registrationProviderType>
+    <schema>{
+  &quot;openapi&quot;: &quot;3.0.1&quot;,
+  &quot;info&quot;: {
+    &quot;title&quot;: &quot;Room-Permalink-Update&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;version&quot;: &quot;1&quot;
+  },
+  &quot;servers&quot;: [{
+    &quot;url&quot;: &quot;&quot;
+  }],
+  &quot;paths&quot;: {
+    &quot;/&quot;: {
+      &quot;post&quot;: {
+        &quot;parameters&quot;: [],
+        &quot;requestBody&quot;: {
+          &quot;content&quot;: {
+            &quot;application/json&quot;: {
+              &quot;schema&quot;: {
+                &quot;required&quot;: [&quot;command&quot;],
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: {
+                  &quot;command&quot;: {
+                    &quot;required&quot;: [&quot;action&quot;, &quot;params&quot;, &quot;resource&quot;],
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;properties&quot;: {
+                      &quot;resource&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                      },
+                      &quot;action&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                      },
+                      &quot;params&quot;: {
+                        &quot;required&quot;: [&quot;id&quot;, &quot;settings&quot;],
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                          &quot;id&quot;: {
+                            &quot;type&quot;: &quot;string&quot;
+                          },
+                          &quot;name&quot;: {
+                            &quot;type&quot;: &quot;string&quot;
+                          },
+                          &quot;description&quot;: {
+                            &quot;type&quot;: &quot;string&quot;
+                          },
+                          &quot;room_key&quot;: {
+                            &quot;type&quot;: &quot;string&quot;
+                          },
+                          &quot;settings&quot;: {
+                            &quot;required&quot;: [&quot;&quot;],
+                            &quot;type&quot;: &quot;object&quot;,
+                            &quot;properties&quot;: {
+                              &quot;room_type&quot;: {
+                                &quot;type&quot;: &quot;string&quot;
+                              },
+                              &quot;room_recordable&quot;: {
+                                &quot;type&quot;: &quot;integer&quot;
+                              },
+                              &quot;room_name&quot;: {
+                                &quot;type&quot;: &quot;string&quot;
+                              },
+                              &quot;room_description&quot;: {
+                                &quot;type&quot;: &quot;string&quot;
+                              },
+                              &quot;room_emails&quot;: {
+                                &quot;type&quot;: &quot;string&quot;
+                              },
+                              &quot;room_observers_email&quot;: {
+                                &quot;type&quot;: &quot;string&quot;
+                              },
+                              &quot;room_meta&quot;: {
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;additionalProperties&quot;: true
+                              },
+                              &quot;room_template_id&quot;: {
+                                &quot;type&quot;: &quot;integer&quot;
+                              },
+                              &quot;room_post_survey_id&quot;: {
+                                &quot;type&quot;: &quot;integer&quot;
+                              },
+                              &quot;permissions&quot;: {
+                                &quot;required&quot;: [&quot;&quot;],
+                                &quot;type&quot;: &quot;object&quot;,
+                                &quot;properties&quot;: {
+                                  &quot;vcl/audio/send&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/audio/receive&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/whiteboard/view&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/whiteboard/write&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/presenter&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/chat/view&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/chat/write&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/chat/private&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/video/send&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/video/individual/shown&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/video/mosaic/view&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/file/view&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/file/download&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/file/upload&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/room_system_check&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/room_system_check_onetime&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/wait_for_admin&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/room_activated&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/guests/lock&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/waiting_room_mode&quot;: {
+                                    &quot;type&quot;: &quot;string&quot;
+                                  },
+                                  &quot;vcl/fixed_mode&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/participants_video_layout&quot;: {
+                                    &quot;type&quot;: &quot;string&quot;
+                                  },
+                                  &quot;vcl/whiteboard/export&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/simple_mode&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/screen_sharing_request&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/chat/in/waiting/room&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/video/mosaic/shown&quot;: {
+                                    &quot;type&quot;: &quot;string&quot;
+                                  },
+                                  &quot;vcl/whiteboard/edit/all&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/assign_participants_to_groups_randomly&quot;: {
+                                    &quot;type&quot;: &quot;integer&quot;
+                                  },
+                                  &quot;vcl/layout_template&quot;: {
+                                    &quot;type&quot;: &quot;string&quot;
+                                  }
+                                },
+                                &quot;additionalProperties&quot;: true
+                              }
+                            },
+                            &quot;additionalProperties&quot;: true
+                          }
+                        },
+                        &quot;additionalProperties&quot;: true
+                      }
+                    },
+                    &quot;additionalProperties&quot;: true
+                  }
+                },
+                &quot;additionalProperties&quot;: true
+              }
+            }
+          }
+        },
+        &quot;responses&quot;: {
+          &quot;200&quot;: {
+            &quot;description&quot;: &quot;&quot;,
+            &quot;content&quot;: {
+              &quot;application/json&quot;: {
+                &quot;schema&quot;: {
+                  &quot;required&quot;: [&quot;response&quot;, &quot;status&quot;],
+                  &quot;type&quot;: &quot;object&quot;,
+                  &quot;properties&quot;: {
+                    &quot;status&quot;: {
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    &quot;response&quot;: {
+                      &quot;required&quot;: [&quot;&quot;],
+                      &quot;type&quot;: &quot;object&quot;,
+                      &quot;properties&quot;: {
+                        &quot;error_msg&quot;: {
+                          &quot;type&quot;: &quot;string&quot;,
+                          &quot;required&quot;: [&quot;&quot;]
+                        }
+                      },
+                      &quot;additionalProperties&quot;: true
+                    }
+                  },
+                  &quot;additionalProperties&quot;: true
+                }
+              }
+            }
+          }
+        },
+        &quot;security&quot;: [{
+          &quot;BasicAuthCredentials&quot;: []
+        }]
+      }
+    }
+  },
+  &quot;components&quot;: {
+    &quot;securitySchemes&quot;: {
+      &quot;BasicAuthCredentials&quot;: {
+        &quot;type&quot;: &quot;http&quot;,
+        &quot;scheme&quot;: &quot;basic&quot;
+      }
+    }
+  }
+}</schema>
+    <schemaType>OpenApi3</schemaType>
+    <serviceBinding>{&quot;host&quot;:&quot;&quot;,&quot;basePath&quot;:&quot;/&quot;,&quot;allowedSchemes&quot;:[],&quot;requestMediaTypes&quot;:[],&quot;responseMediaTypes&quot;:[],&quot;compatibleMediaTypes&quot;:{}}</serviceBinding>
+    <status>Complete</status>
+    <systemVersion>5</systemVersion>
+</ExternalServiceRegistration>

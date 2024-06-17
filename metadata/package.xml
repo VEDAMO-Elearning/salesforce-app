@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Vedamo</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Vedamo_Session_Participants__c</members>
+        <members>Vedamo_Session_Permalink__c</members>
+        <members>Vedamo_Session__c</members>
+        <members>Vedamo_User__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Vedamo_Session_Participants__c</members>
+        <members>Vedamo_Session_Permalink__c</members>
+        <members>Vedamo_Session__c</members>
+        <members>Vedamo_User__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Vedamo</members>
+        <name>ExternalCredential</name>
+    </types>
+    <types>
+        <members>VedamoSessionClose</members>
+        <members>VedamoSessionCreate</members>
+        <members>VedamoSessionJoin</members>
+        <members>VedamoSessionPermalinkCreate</members>
+        <members>VedamoSessionPermalinkDelete</members>
+        <members>VedamoSessionPermalinkUpdate</members>
+        <members>VedamoUserCreate</members>
+        <members>VedamoUserDelete</members>
+        <members>VedamoUserUpdate</members>
+        <name>ExternalServiceRegistration</name>
+    </types>
+    <types>
+        <members>Vedamo_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Vedamo_Session_Close</members>
+        <members>Vedamo_Session_Create</members>
+        <members>Vedamo_Session_Participants_Create</members>
+        <members>Vedamo_Session_Permalink_Create</members>
+        <members>Vedamo_Session_Permalink_Delete</members>
+        <members>Vedamo_Session_Permalink_Update</members>
+        <members>Vedamo_User_Create</members>
+        <members>Vedamo_User_Delete</members>
+        <members>Vedamo_User_Update</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Vedamo_Session_Participants__c-Vedamo Session Participants Layout</members>
+        <members>Vedamo_Session_Permalink__c-Vedamo Session Permalink Layout</members>
+        <members>Vedamo_Session__c-Vedamo Session Layout</members>
+        <members>Vedamo_User__c-Vedamo User Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Vedamo</members>
+        <name>NamedCredential</name>
+    </types>
+    <types>
+        <members>Vedamo</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>60.0</version>
+</Package>

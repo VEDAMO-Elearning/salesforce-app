@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>VedamoSessionPermalinkDelete</label>
+    <namedCredentialReference>Vedamo</namedCredentialReference>
+    <operations>
+        <active>true</active>
+        <name>post</name>
+    </operations>
+    <registrationProviderType>Custom</registrationProviderType>
+    <schema>{
+  &quot;openapi&quot;: &quot;3.0.1&quot;,
+  &quot;info&quot;: {
+    &quot;title&quot;: &quot;Room-Permalink-Delete&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;version&quot;: &quot;1&quot;
+  },
+  &quot;servers&quot;: [{
+    &quot;url&quot;: &quot;&quot;
+  }],
+  &quot;paths&quot;: {
+    &quot;/&quot;: {
+      &quot;post&quot;: {
+        &quot;parameters&quot;: [],
+        &quot;requestBody&quot;: {
+          &quot;content&quot;: {
+            &quot;application/json&quot;: {
+              &quot;schema&quot;: {
+                &quot;required&quot;: [&quot;command&quot;],
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;properties&quot;: {
+                  &quot;command&quot;: {
+                    &quot;required&quot;: [&quot;action&quot;, &quot;params&quot;, &quot;resource&quot;],
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;properties&quot;: {
+                      &quot;resource&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                      },
+                      &quot;action&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                      },
+                      &quot;params&quot;: {
+                        &quot;required&quot;: [&quot;id&quot;],
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                          &quot;id&quot;: {
+                            &quot;type&quot;: &quot;string&quot;
+                          }
+                        },
+                        &quot;additionalProperties&quot;: true
+                      }
+                    },
+                    &quot;additionalProperties&quot;: true
+                  }
+                },
+                &quot;additionalProperties&quot;: true
+              }
+            }
+          }
+        },
+        &quot;responses&quot;: {
+          &quot;200&quot;: {
+            &quot;description&quot;: &quot;&quot;,
+            &quot;content&quot;: {
+              &quot;application/json&quot;: {
+                &quot;schema&quot;: {
+                  &quot;required&quot;: [&quot;response&quot;, &quot;status&quot;],
+                  &quot;type&quot;: &quot;object&quot;,
+                  &quot;properties&quot;: {
+                    &quot;status&quot;: {
+                      &quot;type&quot;: &quot;string&quot;
+                    },
+                    &quot;response&quot;: {
+                      &quot;required&quot;: [&quot;&quot;],
+                      &quot;type&quot;: &quot;object&quot;,
+                      &quot;properties&quot;: {
+                        &quot;error_msg&quot;: {
+                          &quot;type&quot;: &quot;string&quot;,
+                          &quot;required&quot;: [&quot;&quot;]
+                        }
+                      },
+                      &quot;additionalProperties&quot;: true
+                    }
+                  },
+                  &quot;additionalProperties&quot;: true
+                }
+              }
+            }
+          }
+        },
+        &quot;security&quot;: [{
+          &quot;BasicAuthCredentials&quot;: []
+        }]
+      }
+    }
+  },
+  &quot;components&quot;: {
+    &quot;securitySchemes&quot;: {
+      &quot;BasicAuthCredentials&quot;: {
+        &quot;type&quot;: &quot;http&quot;,
+        &quot;scheme&quot;: &quot;basic&quot;
+      }
+    }
+  }
+}</schema>
+    <schemaType>OpenApi3</schemaType>
+    <serviceBinding>{&quot;host&quot;:&quot;&quot;,&quot;basePath&quot;:&quot;/&quot;,&quot;allowedSchemes&quot;:[],&quot;requestMediaTypes&quot;:[],&quot;responseMediaTypes&quot;:[],&quot;compatibleMediaTypes&quot;:{}}</serviceBinding>
+    <status>Complete</status>
+    <systemVersion>5</systemVersion>
+</ExternalServiceRegistration>
