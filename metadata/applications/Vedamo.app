@@ -17,6 +17,7 @@
     <tabs>Vedamo_Session_Permalink__c</tabs>
     <tabs>Vedamo_Session__c</tabs>
     <tabs>Vedamo_Session_Participants__c</tabs>
+    <tabs>Vedamo_Session_Permalink_Teachers__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Vedamo_UtilityBar</utilityBar>
 </CustomApplication>

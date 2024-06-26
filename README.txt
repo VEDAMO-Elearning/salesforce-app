@@ -111,6 +111,22 @@ Vedamo Session Permalink
 			
 IMPORTANT: Changing Record's "Vedamo API Object Status" field to "deleted" will remove the corresponding object in the Vedamo system. 
 
+Vedamo Session Permalink Teachers
+	-> purpose: Share, Unshare a session permalink to particular teacher in the Vedamo system. 
+	-> field:
+			-> Permalink ID (Text) The ID of the Permalink found in Vedamo Permalink Object -> API Permalink ID Field.
+			-> User ID (Text) The ID of the User found in Vedamo User Object -> User ID Field.
+			-> API Operation Error  (Text Area (Long)) will be populated in case Vedamo API returns an error in the process.
+			-> API Operation Status (Text) will populated with a value either "OK" or value "FAIL" (in case there is a problem with the API request to the Vedamo system)
+			-> API Object Status (Picklist) will be populated with a value either "shared" OR "unshared". 
+			-> API Permalink Share ID (Text) will be populated with the Vedamo internal permalink share ID.
+			
+IMPORTANT: 
+Creating a record in this object will share the corresponding permalink with the corresponding teacher in the Vedamo system.
+Changing Record's "Vedamo API Object Status" field to "unshared" will unshare the corresponding permalink with the corresponding teacher in the Vedamo system.
+Changing Record's "Vedamo API Object Status" field to "shared" will share the corresponding permalink with the corresponding teacher in the Vedamo system.
+
+
 
 Vedamo Session
 	-> purpose: Creates, Updates or Deletes a session entity in the Vedamo system.

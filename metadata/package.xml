@@ -6,6 +6,7 @@
     </types>
     <types>
         <members>Vedamo_Session_Participants__c</members>
+        <members>Vedamo_Session_Permalink_Teachers__c</members>
         <members>Vedamo_Session_Permalink__c</members>
         <members>Vedamo_Session__c</members>
         <members>Vedamo_User__c</members>
@@ -13,6 +14,7 @@
     </types>
     <types>
         <members>Vedamo_Session_Participants__c</members>
+        <members>Vedamo_Session_Permalink_Teachers__c</members>
         <members>Vedamo_Session_Permalink__c</members>
         <members>Vedamo_Session__c</members>
         <members>Vedamo_User__c</members>
@@ -28,6 +30,8 @@
         <members>VedamoSessionJoin</members>
         <members>VedamoSessionPermalinkCreate</members>
         <members>VedamoSessionPermalinkDelete</members>
+        <members>VedamoSessionPermalinkTeacherShare</members>
+        <members>VedamoSessionPermalinkTeacherUnshare</members>
         <members>VedamoSessionPermalinkUpdate</members>
         <members>VedamoUserCreate</members>
         <members>VedamoUserDelete</members>
@@ -44,6 +48,9 @@
         <members>Vedamo_Session_Participants_Create</members>
         <members>Vedamo_Session_Permalink_Create</members>
         <members>Vedamo_Session_Permalink_Delete</members>
+        <members>Vedamo_Session_Permalink_Teacher_Create</members>
+        <members>Vedamo_Session_Permalink_Teacher_Share</members>
+        <members>Vedamo_Session_Permalink_Teacher_Unshare</members>
         <members>Vedamo_Session_Permalink_Update</members>
         <members>Vedamo_User_Create</members>
         <members>Vedamo_User_Delete</members>
@@ -52,6 +59,7 @@
     </types>
     <types>
         <members>Vedamo_Session_Participants__c-Vedamo Session Participants Layout</members>
+        <members>Vedamo_Session_Permalink_Teachers__c-Vedamo Session Permalink Teachers Layout</members>
         <members>Vedamo_Session_Permalink__c-Vedamo Session Permalink Layout</members>
         <members>Vedamo_Session__c-Vedamo Session Layout</members>
         <members>Vedamo_User__c-Vedamo User Layout</members>

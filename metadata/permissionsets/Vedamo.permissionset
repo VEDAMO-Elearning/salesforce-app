@@ -35,6 +35,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Vedamo_Session_Permalink_Teachers__c.API_Object_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Vedamo_Session_Permalink_Teachers__c.API_Operation_Error__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Vedamo_Session_Permalink_Teachers__c.API_Operation_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Vedamo_Session_Permalink_Teachers__c.API_Permalink_Share_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Vedamo_Session_Permalink__c.API_Object_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -325,6 +345,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>Vedamo_Session_Permalink_Teachers__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>Vedamo_Session_Permalink__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -348,6 +377,10 @@
     </objectPermissions>
     <tabSettings>
         <tab>Vedamo_Session_Participants__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Vedamo_Session_Permalink_Teachers__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
